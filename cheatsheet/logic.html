@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logic tables</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+<div>
+    <h1>Logic cheatsheet</h1>
+
+    <h2>The Truth Terms</h2>
+    <ul>
+        <li>and</li>
+        <li>or</li>
+        <li>not</li>
+        <li>!= (not equal)</li>
+        <li>== (equal)</li>
+        <li>&gt;= (greater-than-equal)</li>
+        <li>&lt;= (less-than-equal)</li>
+        <li>True</li>
+        <li>False</li>
+    </ul>
+
+    <h2>The Truth Tables</h2>
+    <table class="table table-hover">
+        <colgroup>
+            <col width="60%">
+            <col width="40%">
+        </colgroup>
+        <thead valign="bottom">
+        <tr>
+            <th class="head">NOT</th>
+            <th class="head">True?</th>
+        </tr>
+        </thead>
+        <tbody valign="top">
+        <tr>
+            <td>not False</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>not True</td>
+            <td>False</td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="table table-hover">
+        <colgroup>
+            <col width="60%">
+            <col width="40%">
+        </colgroup>
+        <thead valign="bottom">
+        <tr>
+            <th class="head">OR</th>
+            <th class="head">True?</th>
+        </tr>
+        </thead>
+        <tbody valign="top">
+        <tr>
+            <td>True or False</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>True or True</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>False or True</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>False or False</td>
+            <td>False</td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="table table-hover">
+        <colgroup>
+            <col width="60%">
+            <col width="40%">
+        </colgroup>
+        <thead valign="bottom">
+        <tr>
+            <th class="head">AND</th>
+            <th class="head">True?</th>
+        </tr>
+        </thead>
+        <tbody valign="top">
+        <tr>
+            <td>True and False</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>True and True</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>False and True</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>False and False</td>
+            <td>False</td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="table table-hover">
+        <colgroup>
+            <col width="60%">
+            <col width="40%">
+        </colgroup>
+        <thead valign="bottom">
+        <tr>
+            <th class="head">NOT OR</th>
+            <th class="head">True?</th>
+        </tr>
+        </thead>
+        <tbody valign="top">
+        <tr>
+            <td>not (True or False)</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>not (True or True)</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>not (False or True)</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>not (False or False)</td>
+            <td>True</td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="table table-hover">
+        <colgroup>
+            <col width="60%">
+            <col width="40%">
+        </colgroup>
+        <thead valign="bottom">
+        <tr>
+            <th class="head">NOT AND</th>
+            <th class="head">True?</th>
+        </tr>
+        </thead>
+        <tbody valign="top">
+        <tr>
+            <td>not (True and False)</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>not (True and True)</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>not (False and True)</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>not (False and False)</td>
+            <td>True</td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="table table-hover">
+        <colgroup>
+            <col width="60%">
+            <col width="40%">
+        </colgroup>
+        <thead valign="bottom">
+        <tr>
+            <th class="head">!=</th>
+            <th class="head">True?</th>
+        </tr>
+        </thead>
+        <tbody valign="top">
+        <tr>
+            <td>1 != 0</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>1 != 1</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>0 != 1</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>0 != 0</td>
+            <td>False</td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="table table-hover">
+        <colgroup>
+            <col width="60%">
+            <col width="40%">
+        </colgroup>
+        <thead valign="bottom">
+        <tr>
+            <th class="head">==</th>
+            <th class="head">True?</th>
+        </tr>
+        </thead>
+        <tbody valign="top">
+        <tr>
+            <td>1 == 0</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>1 == 1</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>0 == 1</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>0 == 0</td>
+            <td>True</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

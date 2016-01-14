@@ -1,33 +1,48 @@
 # coding=utf-8
 
 
-# No. 1
 # Define a function my_max() that takes two numbers as arguments and returns the largest of them.
 # Use the if-then-else construct available in Python.
 # (It is true that Python has the max() function built in, but writing it yourself is nevertheless a good exercise.)
 def my_max(x, y):
-    pass
+    if x > y:
+        return x
+    else:
+        return y
 
 
-# No. 2
 # Define a function max_of_three() that takes three numbers as arguments and returns the largest of them.
 def max_of_tree(x, y, z):
-    pass
+    if x > y and x > z:
+        return x
+    elif y > z:
+        return y
+    else:
+        return z
 
 
-# No. 3
 # Define a function that computes the length of a given list or string.
 # (It is true that Python has the len() function built in, but writing it yourself is nevertheless a good exercise.)
 def my_len(string):
-    pass
+    length = 0
+    is_string_finished = False
+    while not is_string_finished:
+        try:
+            string[length]
+            length += 1
+        except:
+            is_string_finished = True
+    return length
 
 
-# No. 4
 # Write a function that takes a character (i.e. a string of length 1) and returns True if it is a vowel,
 # False otherwise.
 def is_vowel(character):
-    pass
-
+    vowels = ['a', 'e', 'i', 'o', 'u', 'y']
+    if character in vowels:
+        return True
+    else:
+        return False
 
 # No. 5
 # Write a function translate() that will translate a text into "rövarspråket" (Swedish for "robber's language").
@@ -42,11 +57,17 @@ def translate(text_to_translate):
 # all the numbers in a list of numbers. For example, sum([1, 2, 3, 4]) should return 10,
 # and multiply([1, 2, 3, 4]) should return 24.
 def my_sum(list_to_sum):
-    pass
+    sum_to_count = 0
+    for number in list_to_sum:
+        sum_to_count = sum_to_count + number
+    return sum_to_count
 
 
 def multiply(list_to_mulitiply):
-    pass
+    sum_of_multiply = 1
+    for index in range(len(list_to_mulitiply)):
+        sum_of_multiply = sum_of_multiply * list_to_mulitiply[index]
+    return sum_of_multiply
 
 # No. 7
 # Define a function reverse() that computes the reversal of a string.

@@ -1,7 +1,7 @@
 import unittest
 
 from workshops.ws4_exercises import my_max, max_of_tree, my_len, is_vowel, my_sum, multiply, reverse, is_palindrome, \
-    is_member, overlapping
+    is_member, overlapping, translate
 
 
 class TestPythonFunctions(unittest.TestCase):
@@ -44,6 +44,9 @@ class TestPythonFunctions(unittest.TestCase):
         self.assertTrue(overlapping([1, 'asd', 123, 'member'], ['asd', 123]))
         self.assertTrue(overlapping([1, 'asd', 123, 'member'], ['member', ]))
         self.assertFalse(overlapping([1, 'asd', 123, 'member'], ['member2']))
+
+    def test_translate_function_should_translate_string_into_robbers_language(self):
+        self.assertEqual(translate("this is fun"), "tothohisos isos fofunon")
 
     def test_my_len_function_should_return_expected_length_of_string(self):
         self.assertEqual(my_len('test'), 4)

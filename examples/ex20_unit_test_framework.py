@@ -19,3 +19,6 @@ class TestStringMethods(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+# Workshop time! ws4_exercises.py

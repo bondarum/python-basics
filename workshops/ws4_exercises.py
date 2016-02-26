@@ -67,3 +67,22 @@ def translate(text_to_translate):
 # (It is true that Python has the len() function built in, but writing it yourself is nevertheless a good exercise.)
 def my_len(string):
     pass
+
+
+# Define a class named Circle which can be constructed by a radius.
+# The Circle class has a method which can compute the area.
+
+class Circle(object):
+    pass
+
+
+# Define a class named Shape and its subclass Square.
+# The Square class has an init function which takes a length as argument.
+# Both classes have a area function which can print the area of the shape where Shape's area is 0 by default.
+
+class Shape(object):
+    pass
+
+
+class Square(Shape):
+    pass

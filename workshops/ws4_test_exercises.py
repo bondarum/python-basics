@@ -1,7 +1,7 @@
 import unittest
 
 from workshops.ws4_exercises import my_max, max_of_tree, my_len, is_vowel, my_sum, multiply, reverse, is_palindrome, \
-    is_member, overlapping, translate
+    is_member, overlapping, translate, Circle, Shape, Square
 
 
 class TestPythonFunctions(unittest.TestCase):
@@ -54,5 +54,13 @@ class TestPythonFunctions(unittest.TestCase):
         self.assertEqual(my_len(''), 0)
         self.assertEqual(my_len('!@#$%^&*()'), 10)
 
-if __name__ == '__main__':
-    unittest.main()
+    def test_circle_class_returns_correct_area_value(self):
+        circle = Circle(2)
+        self.assertEqual(circle.area(), 12.56)
+
+    def test_shape_and_square_class_should_return_correct_area_values(self):
+        shape = Shape()
+        square = Square(3)
+        self.assertEqual(shape.area(), 0)
+        self.assertEqual(square.area(), 9)
+        self.assertTrue(isinstance(square, Shape))
